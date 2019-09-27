@@ -1,0 +1,51 @@
+.input-field:focus,
+.input-field--light:focus {
+    outline: 0;
+    opacity: .8;
+}
+
+.input-background {
+    width: 100%;
+    position: relative;
+    max-height: 2.4rem;
+
+    &--tan {
+        @extend .input-background;
+        background-color: darken($color-tan, 8%);
+    }
+    &--pink {
+        @extend .input-background;
+        background-color: $color-pink;
+    }
+    &--grey-light {
+        @extend .input-background;
+        background-color: $color-grey-light;
+    }
+}
+
+.input-field {
+    border: .5px solid black;
+    padding: .5rem 1rem;
+    font-weight: lighter;
+    max-height: 2.4rem;
+    width: 100%;
+    opacity: .6;
+    margin-top: .2rem;
+    margin-left: .2rem;
+
+    &--light {
+        border: .5px solid darken($color-grey-light, 8%);
+        padding: .5rem 1rem;
+        font-weight: lighter;
+        max-height: 2.4rem;
+        width: 100%;
+        opacity: .6;
+        margin-top: .2rem;
+        margin-left: .2rem;
+    }
+}
+
+.input-label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+}
